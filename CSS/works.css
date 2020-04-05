@@ -1,0 +1,87 @@
+.review {
+	background-color: white;
+	-webkit-box-flex: 4;
+	    -ms-flex-positive: 4;
+	        flex-grow: 4;
+}
+.reviewLogo {
+	margin: 1%;
+	text-align: center;
+}
+.reviewLogo h3 {
+	display: inline-block;
+}
+.reviewImg img {
+	float: left;
+	width: 150px;
+	height: 150px;
+	border: 3px solid transparent;
+	margin-right: 2vw;
+}
+.reviewImg img:hover {
+	-webkit-transform: scale(1.2);
+	    -ms-transform: scale(1.2);
+	        transform: scale(1.2);
+	-webkit-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+	-webkit-animation: animHoverWorks 0.5s;
+	        animation: animHoverWorks 0.5s;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+}
+.review1,
+.review2,
+.review3 {
+	-webkit-box-flex: 3;
+	    -ms-flex-positive: 3;
+	        flex-grow: 3;
+	margin: 1%;
+	border: solid 3px rgba(236, 235, 241, 1);
+}
+.manImage {
+	float: left;
+	margin: 0 2% 1%;
+	border-radius: 50%;
+	height: 150px;
+}
+.review1 h4,
+.review2 h4,
+.review3 h4 {
+	text-align: center;
+}
+.gaechka {
+	color: rgba(42, 172, 200, 1);
+}
+
+
+/*Анимация*/
+@-webkit-keyframes animHoverWorks {
+	from {border-color: transparent; border-radius: 0;}
+	to {border-color: rgba(42, 172, 200, 1); border-radius: 8px;}
+}
+@keyframes animHoverWorks {
+	from {border-color: transparent; border-radius: 0;}
+	to {border-color: rgba(42, 172, 200, 1); border-radius: 8px;}
+}
+
+
+
+/*Медиа*/
+@media only all and (max-width: 450px) {
+	/*Контент*/
+	.reviewImg img {
+		float: none;
+		width: 45%;
+		height: auto;
+	}
+	.manImage {
+		width: 45%;
+		height: auto;
+	}
+	.reviewImg img:hover {
+		-webkit-transform: scale(1.1);
+		    -ms-transform: scale(1.1);
+		        transform: scale(1.1);
+	}
+}

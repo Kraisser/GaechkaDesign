@@ -1,0 +1,112 @@
+main {
+	-webkit-box-flex: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
+}
+.formLogo {
+	text-align: center;
+	margin: 1%;
+}
+.textForm {
+	font-size: 20px;
+	margin: 3vw;
+}
+#formInside {
+	margin: 2vw;
+	-webkit-box-flex: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
+}
+.div_name,
+.div_email,
+.textDiv {
+	border-radius: 8px;
+}
+.map {
+	-webkit-box-flex: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
+}
+.form {
+	-webkit-box-flex: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
+}
+.formSucces {
+	border: solid 1px green;
+}
+.formError {
+	border: solid 1px red;
+}
+.textDiv {
+	height: 25vh;
+	margin-bottom: 1vh;
+}
+#name,
+#email {
+	width: 100%;
+	padding-left: 1vw;
+    border-radius: 8px;
+}
+#text {
+	width: 100%;
+	overflow: auto;
+	resize: none;
+	height: 25vh;
+	padding-left: 1vw;
+    border-radius: 8px;
+}
+.formAndMap {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.map iframe {
+	margin: 2vw;
+	height: 80%;
+	width: 90%;
+    border-radius: 8px;
+}
+.fieldset {
+	border: solid 3px rgba(232, 235, 241, 1);
+    border-radius: 5px;
+	margin: 1%;
+}
+.fieldset legend {
+	text-align: center;
+	font-weight: 600;
+}
+#submitButton {
+	background-color: rgba(42, 172, 200, 1);
+	border: 1px solid transparent;
+}
+#submitButton:hover {
+	background-color: rgba(42, 172, 200, 1);
+	border: 1px solid rgba(232, 235, 241, 1);
+}
+button#submitButton:active {
+	background-color: rgba(42, 172, 200, 1);
+	border: 1px solid green;
+}
+#submitButton:focus {
+	-webkit-box-shadow: 0 0 0 0.2rem rgba(42, 172, 200, .5);
+	        box-shadow: 0 0 0 0.2rem rgba(42, 172, 200, .5);
+}
+
+
+
+/*Медиа*/
+@media only all and (max-width: 790px) {
+	
+	/*Контент*/
+	.formAndMap {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+	.map iframe {
+		width: 95%;
+		margin: 2%;
+	}
+}

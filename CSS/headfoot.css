@@ -1,0 +1,319 @@
+body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100vh;
+}
+/*Шапка*/
+.links {
+    color: black;
+    text-decoration: none;
+}
+.links:hover {
+    color: black;
+    text-decoration: none;
+}
+.logo {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    text-align: center;
+}
+.menu__links-item:hover,
+.navFoot:hover {
+    color: rgba(42, 172, 200, 1);
+    -webkit-animation: animHover 0.5s;
+            animation: animHover 0.5s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+}
+.pageOn {
+    border: 2px solid rgba(42, 172, 200, 1);
+    border-radius: 5px;
+}
+
+header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: rgba(232, 235, 241, 1);
+}
+
+/*Hamburger*/
+.menu {
+    text-align: center;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    margin: auto;
+}
+.menu__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.menu__icon {
+   display: none;
+   width: 10vw;
+   height: 5vh;
+   position: relative;
+   cursor: pointer;
+}
+
+.menu__icon span {
+  display: block;
+  position: absolute;
+  height: 9px;
+  width: 100%;
+  background: rgba(42, 172, 200, 1);
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+.menu__icon span:nth-child(1) {
+  top: 0px;
+}
+
+.menu__icon span:nth-child(2), 
+.menu__icon span:nth-child(3) {
+  top: 13px;
+}
+
+.menu__icon span:nth-child(4) {
+  top: 26px;
+ }
+
+.menu__links-item {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    color: black;
+    font-weight: 900;
+    font-size: 18px;
+    margin: auto;
+    text-transform: uppercase;
+    text-align: center;
+}
+.menu__links-item:hover {
+  text-decoration: none;
+}
+.menu.menu_state_open .menu__icon span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.menu.menu_state_open .menu__icon span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.menu.menu_state_open  .menu__icon span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.menu.menu_state_open  .menu__icon span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.menu.menu_state_open .menu__links {
+  display: block;  
+}
+/*Hamburger*/
+
+/*Подвал*/
+footer {
+    background-color: rgba(232, 235, 241, 1);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.footerDescription {
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+    margin: 1vh;
+}
+.footerDescription p,
+.contactText {
+    font-weight: 600;
+}
+.explore {
+    -webkit-box-flex: 3;
+        -ms-flex-positive: 3;
+            flex-grow: 3;
+    text-align: left;
+    margin: 1vh;
+}
+.navFoot {
+    color: black;
+    font-weight: 900;
+    margin: 0;
+    padding: 1% 10px;
+    border-radius: 8px;
+}
+.contactUs {
+    -webkit-box-flex: 3;
+        -ms-flex-positive: 3;
+            flex-grow: 3;
+    margin: 1vh;
+}
+.social {
+    -webkit-box-flex: 3;
+        -ms-flex-positive: 3;
+            flex-grow: 3;
+    text-align: center;
+    margin: 1vh;
+}
+.social div a {
+    text-decoration: none;
+}
+.logoFooter {
+    -webkit-box-flex: 3;
+        -ms-flex-positive: 3;
+            flex-grow: 3;
+    position: relative;
+    text-align: center;
+}
+#logoTextFooter {
+    position: relative;
+    top: 25%; 
+}
+.logoTextColor {
+    color: rgba(42, 172, 200, 1);
+    font-weight: 900;
+}
+
+/*Анимация*/
+@-webkit-keyframes animHover {
+    from {
+        background-color: transparent;
+    }
+    to {
+        background-color: rgba(42, 172, 200, 0.1);
+    }
+}
+@keyframes animHover {
+    from {
+        background-color: transparent;
+    }
+    to {
+        background-color: rgba(42, 172, 200, 0.1);
+    }
+}
+
+@media only all and (max-width: 840px) {
+    /*Шапка*/
+    header {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .logo h1 {
+        margin: 0 0 1vh;
+    }
+    .menu__links-item {
+        font-size: 15px;
+    }
+    .menu {
+        width: 100%;
+    }
+
+    /*Подвал*/
+    .footerDescription,
+    .contactUs {
+        display: none;
+    }
+    .social div a img {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .explore {
+        margin-left: 2vw;
+    }
+}
+@media only all and (max-width: 490px) {
+    /*Шапка*/
+    .logo h1 {
+        font-size: 1.9em;
+    }
+    .logo {
+        height: 5vh;
+    }
+    header {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+    }
+    /*Hamburger*/
+    .menu__icon{
+    display: inline-block;
+    z-index: 1001;
+    margin: 4% 4% 0 0;
+    height: 4vh;
+  }
+  .menu {
+    text-align: right;
+    height: 5vh;
+  }
+  
+  .menu__links {
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin-top: 5vh;
+    background-color: rgba(232, 235, 241, 1);
+    z-index: 1000;
+    overflow: auto;
+  }
+  
+  .menu__links-item {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    color: black;
+  }
+
+    /*Подвал*/
+    footer {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .explore {
+        text-align: center;
+        border-bottom: solid 3px rgba(129, 228, 237, 1);
+        font-size: 18px;
+        margin: 0;
+    }
+    .social {
+        margin: 0;
+    }
+    #logoTextFooter {
+        top: 0;
+    }
+
+}
